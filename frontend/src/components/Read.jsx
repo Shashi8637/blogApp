@@ -66,8 +66,8 @@ const Read = () => {
                   <h6 className="card-subtitle mb-2 text-muted">
                     {ele.description}
                   </h6>
-                  <p className="card-text">
-                    {ele.name}
+                  <p className="card-text" style={{ color: "black" }}>
+                    BY:- {ele.name}
                   </p>
                   <div className="d-flex justify-content-start">
                     <span className="btn me-5" style={{ backgroundColor: "#0f6467", color: "white" }} onClick={() => navigate(`/${ele._id}`)}>
