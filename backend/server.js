@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 8000;
 
 //middleware
 app.use(express.json());
-app.use(cors({origin:"http://localhost:3000",optionsSuccessStatus: 200}));
+app.use(cors({origin:"https://blog-app-zeta-three.vercel.app/",optionsSuccessStatus: 200}));
 
 //Routers
 app.use("/api/v1/user",userRoutes);
