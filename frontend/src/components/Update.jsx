@@ -15,7 +15,7 @@ const Update = () => {
 
   //receiving single data
   const getSingleData = async()=>{
-    const response = await fetch(`http://localhost:5500/api/v1/user/${id}`);
+    const response = await fetch(`https://blogapp-m2nv.onrender.com/api/v1/user/${id}`);
     const result = await response.json();
 
     if(response.ok){
@@ -35,7 +35,7 @@ const Update = () => {
     const updatedUser = {name,title,description};
     console.log(updatedUser);
     
-    const response = await fetch(`http://localhost:5500/api/v1/user/update/${id}`,{
+    const response = await fetch(`https://blogapp-m2nv.onrender.com/api/v1/user/update/${id}`,{
       method:"PATCH",
       headers:{
         "Content-Type":"application/json",
